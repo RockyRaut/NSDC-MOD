@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 from discord import app_commands
-import async
+import asyncio
 import os
 
 intents = discord.Intents.all()
