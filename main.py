@@ -1,6 +1,8 @@
 import discord
 from discord.ext import commands
 from discord import app_commands
+import async
+import os
 
 intents = discord.Intents.all()
 bot = commands.Bot(command_prefix="!", intents=intents)
@@ -104,5 +106,5 @@ async def warnings(interaction: discord.Interaction, user: discord.Member):
     else:
         msg = "\n".join(f"{i+1}. {w}" for i, w in enumerate(user_warns))
         await interaction.response.send_message(f"⚠️ Warnings for {user.mention}:\n{msg}")
-import os        
+        
 bot.run(os.getenv("DISCORD_TOKEN"))
