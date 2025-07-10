@@ -1,0 +1,9 @@
+[tool.poetry]
+name = "nepalsocialdc"
+version = "0.1.0"
+description = "Moderation Discord bot for NEPALSOCIALDC"
+authors = ["ROCKY"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+discord.py = "^2.3.2"
